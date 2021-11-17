@@ -3,13 +3,13 @@
 // here write YOUR NIGHTSCOUT configuration data (do not edit M5StickC_NSconfig.h file)
 
 void readConfiguration(tConfig *cfg) {
-  strlcpy(cfg->url, "username.herokuapp.com", 64); // Nightscout URL
+  strlcpy(cfg->url, "martin140569.ns.10be.de", 64); // Nightscout URL
   strlcpy(cfg->token, "", 32); // security token
   cfg->bootPic[0]=0;
   strcpy(cfg->userName, "User");
   cfg->timeZone = 3600; // time zone shift in second (1 hour = 3600 seconds)
   cfg->dst = 3600; // daylight shift in seconds
-  cfg->show_mgdl = 0; // 0 for mmol/L, 1 for mg/dL
+  cfg->show_mgdl = 1; // 0 for mmol/L, 1 for mg/dL
   cfg->sgv_only = 0; // 1 = filter only SGV values
   cfg->show_current_time = 0; // not used currently
   cfg->show_COB_IOB = 1; // show COB and IOB
